@@ -1,11 +1,25 @@
 :root {
+    /* fonts */
+    --cf-body-font: "Roboto", sans-serif;
+    --cf-title-font: "Racing Sans One", sans-serif;
+    --cf-subtitle-font: "Fira Sans", sans-serif;
+
+    /* colors */
     --cf-dark: #212121;
     --cf-light: #ebebeb;
     --cf-darkblue: #00223d;
     --cf-highlight: #fae100;
+
+     
 }
 
+/* 
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Racing Sans One', cursive;
+font-family: 'Roboto', sans-serif; */
 
+
+/* STICKY FOOTER */
 html,
 body {
     height: 100%;
@@ -17,6 +31,8 @@ body {
     background-image: url("/img/LandingPage_1920.png");
     background-position: top right;
     background-repeat: no-repeat;
+
+    font-family: var(--cf-body-font);
 }
 
 .content {
@@ -26,3 +42,102 @@ body {
 .footer {
     flex-shrink: 0;
 }
+/* STICKY FOOTER */
+
+
+/* MAIN HEADER */
+.mainTitle {
+    font-family: var(--cf-title-font);
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+
+.subTitle {
+    font-family: var(--cf-subtitle-font);
+    font-size: .6rem;
+    line-height: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.09rem;
+}
+
+.mainHeader-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mainHeader-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+/* MAIN HEADER */
+
+/* **************MEDIA QUERIES**********
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .mainTitle {
+        font-size: 2.6rem;
+        line-height: 2rem;
+    }
+
+    .subTitle {
+        font-size: .9rem;
+        letter-spacing: .1rem;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .mainTitle {
+        font-size: .5rem;
+        line-height: 2rem;
+    }
+
+    .subTitle {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .mainTitle {
+        font-size: .5rem;
+        line-height: 2rem;
+    }
+
+    .subTitle {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .mainTitle {
+        font-size: .5rem;
+        line-height: 2rem;
+    }
+
+    .subTitle {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .mainTitle {
+        font-size: .5rem;
+        line-height: 2rem;
+    }
+
+    .subTitle {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+    }
+}
+/***************MEDIA QUERIES***********/
