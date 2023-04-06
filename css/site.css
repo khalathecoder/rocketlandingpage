@@ -9,8 +9,6 @@
     --cf-light: #ebebeb;
     --cf-darkblue: #00223d;
     --cf-highlight: #fae100;
-
-     
 }
 
 /* 
@@ -18,6 +16,46 @@ font-family: 'Fira Sans', sans-serif;
 font-family: 'Racing Sans One', cursive;
 font-family: 'Roboto', sans-serif; */
 
+/* MAIN HEADER */
+.mainHeader {
+    margin-top: 76px;
+    height: 50px;
+        
+  }
+
+ .navbar-brand {
+    color: var(--cf-light);
+ }
+
+
+.mainTitle {
+    font-family: var(--cf-title-font);
+    font-size: 2.3rem;
+    line-height: 1.8rem;
+    color: var(--cf-light);
+    position: center;
+    /* align-items: center; */
+}
+
+.subTitle {
+    font-family: var(--cf-subtitle-font);
+    font-size: .8rem;
+    line-height: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.09rem;
+    color: var(--cf-light)
+}
+
+
+.mainHeader-content {
+    height: 100%;
+    display: flex;
+}
+/* MAIN HEADER */
+
+.footer {
+    align-items: center;
+}
 
 /* STICKY FOOTER */
 html,
@@ -31,6 +69,7 @@ body {
     background-image: url("/img/LandingPage_1920.png");
     background-position: top right;
     background-repeat: no-repeat;
+    background-color: var(--cf-darkblue);
 
     font-family: var(--cf-body-font);
 }
@@ -44,42 +83,14 @@ body {
 }
 /* STICKY FOOTER */
 
-
-/* MAIN HEADER */
-.mainTitle {
-    font-family: var(--cf-title-font);
-    font-size: 2.3rem;
-    line-height: 1.8rem;
-    color: var(--cf-light)
-}
-
-.subTitle {
-    font-family: var(--cf-subtitle-font);
-    font-size: .8rem;
-    line-height: 1rem;
-    font-weight: 300;
-    letter-spacing: 0.09rem;
-    color: var(--cf-light)
-}
-
-.mainHeader-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.mainHeader-content {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-/* MAIN HEADER */
-
 /* **************MEDIA QUERIES**********
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+
+
     .mainTitle {
         font-size: 2.6rem;
         line-height: 2rem;
