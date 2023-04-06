@@ -66,12 +66,15 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
+    background-image: url("/img/LandingPage_576.png");
+    position: relative;
+    top: 40px;
     background-position: top right;
     background-repeat: no-repeat;
     background-color: var(--cf-darkblue);
 
     font-family: var(--cf-body-font);
+    text-align: justify;
 }
 
 .content {
@@ -90,6 +93,11 @@ body {
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
+    body {
+        background-image: url("/img/LandingPage_768.png");
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
 
     .mainTitle {
         font-size: 2.6rem;
@@ -105,6 +113,13 @@ body {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+    body {
+        background-image: url("/img/LandingPage_992.png");
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+
     .mainTitle {
         font-size: 3rem;
         line-height: 2.2rem;
@@ -119,6 +134,13 @@ body {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+    body {
+        background-image: url("/img/LandingPage_1200.png");
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+
     .mainTitle {
         font-size: 3.5rem;
         line-height: 2.5rem;
@@ -133,6 +155,13 @@ body {
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+    body {
+        background-image: url("/img/LandingPage_1400.png");
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+
     .mainTitle {
         font-size: 4.5rem;
         line-height: 3.2rem;
@@ -147,6 +176,13 @@ body {
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+
+    body {
+        background-image: url("/img/LandingPage_1920.png");
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+
     .mainTitle {
         font-size: 4.5rem;
         line-height: 3.2rem;
