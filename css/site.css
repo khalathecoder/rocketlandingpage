@@ -17,19 +17,11 @@ font-family: 'Racing Sans One', cursive;
 font-family: 'Roboto', sans-serif; */
 
 /* MAIN HEADER */
-.mainHeader {
-    margin-top: 50vh;
-    height: 50px;        
-    color: var(--cf-light);
-  }
-
 .mainTitle {
     font-family: var(--cf-title-font);
     font-size: 2.3rem;
     line-height: 1.8rem;
-    color: var(--cf-light);
-    /* position: center; */
-    
+    color: var(--cf-light);  
 }
 
 .subTitle {
@@ -41,16 +33,17 @@ font-family: 'Roboto', sans-serif; */
     color: var(--cf-light)
 }
 
-
-.mainHeader-content {
+.mainHeader-wrapper {
+    padding-left: 1.3rem;
+  }
+  
+  .mainHeader-content {
     height: 100%;
     display: flex;
-    position: absolute;
-    left: 0px;
-    top: 500px;
-    padding-left: 40px;
     align-items: center;
-}
+    position: absolute;
+    
+  }
 
 .navbar-brand {
     font-size: 1.5rem;
@@ -61,6 +54,10 @@ font-family: 'Roboto', sans-serif; */
   font-size: 1rem;
   color: var(--cf-light);
   line-height: 1rem;
+}
+
+.mainLogo {
+    padding-right: 10px;
 }
 
 .btn-primary {
@@ -74,19 +71,22 @@ font-family: 'Roboto', sans-serif; */
 /* STICKY FOOTER */
 html,
 body {
-    height: 80%;
+    height: 100%;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_576.png");
-    background-position: center;
+    min-height: 100vh;
+    background-image: url("/img/LandingPageNew_576.png");
+    background-position: top center;
     background-repeat: no-repeat;
     background-color: var(--cf-darkblue);
-    min-height: 100vh;
     font-family: var(--cf-body-font);
+    background-size: contain;
     /* text-align: justify; */
+
+    
 }
 
 .content {
@@ -101,9 +101,6 @@ body {
 /* STICKY FOOTER */
 
 /* **************MEDIA QUERIES**********
-// X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap */
-
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
@@ -126,16 +123,14 @@ body {
     }
 
     .mainHeader-content {
-        height: 85%;
-        /* display: flex; */
+        height: 95%;
         position: absolute;
-        /* left: 0px; */
-        top: 70px;
-        /* padding-left: 40px; */
-        /* align-items: center; */
+        top: 30px;
     }
 
-    
+    .mainLogo {
+    height: 3rem;
+}
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -143,7 +138,7 @@ body {
 
     body {
         background-image: url("/img/LandingPage_992.png");
-        background-position: top right;
+        background-position: right;
         background-repeat: no-repeat;
     }
 
@@ -156,6 +151,10 @@ body {
         font-size: 1.1rem;
         letter-spacing: .1rem;
         line-height: 1.2rem;
+    }
+
+    .mainLogo {
+        height: 4rem;
     }
 }
 
@@ -198,6 +197,10 @@ body {
         font-size: 1.7rem;
         letter-spacing: .1rem;
         line-height: 1.8rem;
+    }
+
+    .mainLogo {
+        height: 5rem;
     }
 }
 
