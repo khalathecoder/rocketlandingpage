@@ -8,7 +8,7 @@
     --cf-dark: #212121;
     --cf-light: #ebebeb;
     --cf-darkblue: #00223d;
-    --cf-highlight: #fae100;
+    --cf-highlight: #d1b411;
 }
 
 /* 
@@ -18,23 +18,18 @@ font-family: 'Roboto', sans-serif; */
 
 /* MAIN HEADER */
 .mainHeader {
-    margin-top: 76px;
-    height: 50px;
-        
-  }
-
- .navbar-brand {
+    margin-top: 50vh;
+    height: 50px;        
     color: var(--cf-light);
- }
-
+  }
 
 .mainTitle {
     font-family: var(--cf-title-font);
     font-size: 2.3rem;
     line-height: 1.8rem;
     color: var(--cf-light);
-    position: center;
-    /* align-items: center; */
+    /* position: center; */
+    
 }
 
 .subTitle {
@@ -50,31 +45,48 @@ font-family: 'Roboto', sans-serif; */
 .mainHeader-content {
     height: 100%;
     display: flex;
-}
-/* MAIN HEADER */
-
-.footer {
+    position: absolute;
+    left: 0px;
+    top: 500px;
+    padding-left: 40px;
     align-items: center;
 }
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--cf-light);
+  }
+
+  .nav-link {
+  font-size: 1rem;
+  color: var(--cf-light);
+  line-height: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--cf-highlight);
+    color: var(--cf-dark);
+    border-color: var(--cf-highlight);
+}
+/* END MAIN HEADER */
+
 
 /* STICKY FOOTER */
 html,
 body {
-    height: 100%;
+    height: 80%;
 }
 
 body {
     display: flex;
     flex-direction: column;
     background-image: url("/img/LandingPage_576.png");
-    position: relative;
-    top: 40px;
-    background-position: top right;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: var(--cf-darkblue);
-
+    min-height: 100vh;
     font-family: var(--cf-body-font);
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .content {
@@ -82,7 +94,9 @@ body {
 }
 
 .footer {
-    flex-shrink: 0;
+    flex-shrink: 0;   
+
+
 }
 /* STICKY FOOTER */
 
@@ -95,8 +109,9 @@ body {
 
     body {
         background-image: url("/img/LandingPage_768.png");
-        background-position: top right;
+        background-position: top;
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .mainTitle {
@@ -109,6 +124,18 @@ body {
         font-size: .9rem;
         letter-spacing: .1rem;
     }
+
+    .mainHeader-content {
+        height: 85%;
+        /* display: flex; */
+        position: absolute;
+        /* left: 0px; */
+        top: 70px;
+        /* padding-left: 40px; */
+        /* align-items: center; */
+    }
+
+    
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -179,7 +206,7 @@ body {
 
     body {
         background-image: url("/img/LandingPage_1920.png");
-        background-position: top right;
+        /* background-position: top right; */
         background-repeat: no-repeat;
     }
 
