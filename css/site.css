@@ -8,7 +8,7 @@
     --cf-dark: #212121;
     --cf-light: #ebebeb;
     --cf-darkblue: #00223d;
-    --cf-highlight: #d1b411;
+    --cf-highlight: #ffc107;
 }
 
 /* 
@@ -43,6 +43,7 @@ font-family: 'Roboto', sans-serif; */
     align-items: center;
     position: relative;
     bottom: -600px;
+    margin-left: 30px;
     
   }
 
@@ -84,9 +85,7 @@ body {
     background-color: var(--cf-darkblue);
     font-family: var(--cf-body-font);
     background-size: contain;
-    /* text-align: justify; */
-
-    
+     
 }
 
 .content {
@@ -126,6 +125,7 @@ body {
         height: 95%;
         position: absolute;
         top: 30px;
+
     }
 
     .mainLogo {
@@ -209,7 +209,7 @@ body {
 
     body {
         background-image: url("/img/LandingPage_1920.png");
-        /* background-position: top right; */
+        background-position: top right;
         background-repeat: no-repeat;
     }
 
